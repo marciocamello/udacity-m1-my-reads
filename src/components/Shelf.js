@@ -39,7 +39,7 @@ const Shelf = props => {
                         <Grid item xs={12}>
                             <Grid container justify="center" spacing={24}>
                                 {books.map(book => (
-                                    <Grid key={book.id} item xs={12} md={4} lg={2}>
+                                    <Grid key={book.id} item xs={12} md={4} lg={4}>
                                         <Book
                                             className={classes.paper}
                                             handleFetchAllBooks={handleFetchAllBooks}

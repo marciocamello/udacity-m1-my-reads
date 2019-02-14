@@ -18,7 +18,8 @@
     "eject": "react-scripts eject",
     "cypress": "cypress open",
     "dev-docs": "vuepress dev docs",
-    "build-docs": "vuepress build docs"
+    "build-docs": "vuepress build docs",
+	"heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
