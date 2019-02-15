@@ -4,7 +4,6 @@ import {withStyles} from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
 import Typography from '@material-ui/core/Typography';
 import red from '@material-ui/core/colors/red';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
@@ -18,27 +17,36 @@ import Loading from "./Loading";
 const styles = theme => ({
     card: {
         position: 'relative',
+        boxShadow: 'none',
     },
     cardDisabled: {
         position: 'relative',
-        pointerEvents: 'none'
+        pointerEvents: 'none',
+        boxShadow: 'none',
     },
     media: {
-        height: 189,
-        paddingTop: '100%'
+        height: '100%',
+        paddingTop: '170%',
+        boxShadow: '0px 1px 3px 0px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 2px 1px -1px rgba(0,0,0,0.12)'
     },
-    content: {
-        minHeight: 189
+    mediaContainer: {
+        minHeight: 189,
+        position: 'relative'
     },
-    actions: {
-        display: 'flex',
-    },
-    expand: {
+    changeShelfButton: {
+        position: 'absolute',
+        bottom: 10,
+        right: 10,
         transform: 'rotate(0deg)',
-        marginLeft: 'auto',
         transition: theme.transitions.create('transform', {
             duration: theme.transitions.duration.shortest,
         })
+    },
+    content: {
+
+    },
+    actions: {
+        display: 'flex',
     },
     expandOpen: {
         transform: 'rotate(180deg)',
@@ -94,19 +102,22 @@ class Book extends Component {
      */
     onUpdateBookFromShelf = async (book, shelf) => {
 
-        this.setState({
-            isLoading: true
-        });
+        if(shelf && book) {
 
-        await update(book, shelf);
+            this.setState({
+                isLoading: true
+            });
 
-        this.setState({
-            optionSelected: shelf.toString(),
-            isLoading: false,
-            optionOpen: null
-        });
+            await update(book, shelf);
 
-        this.props.handleFetchAllBooks();
+            this.setState({
+                optionSelected: shelf.toString(),
+                isLoading: false,
+                optionOpen: null
+            });
+
+            this.props.handleFetchAllBooks();
+        }
     };
 
     /**
@@ -127,24 +138,14 @@ class Book extends Component {
         return (
             <Card className={this.state.isLoading ? classes.cardDisabled : classes.card}>
                 <Loading isLoading={this.state.isLoading}/>
-                <CardMedia
-                    className={classes.media}
-                    image={book.imageLinks ? book.imageLinks.thumbnail : 'http://via.placeholder.com/300'}
-                    title={book.title}
-                />
-                <CardContent className={classes.content}>
-                    <Typography component="h5" variant="h5">
-                        {book.title}
-                    </Typography>
-                    {book.authors && book.authors.length > 0 && book.authors.map(author => (
-                        <Typography variant="subtitle1" color="textSecondary" key={author}>
-                            {author}
-                        </Typography>
-                    ))}
-                </CardContent>
-                <CardActions className={classes.actions} disableActionSpacing>
+                <div className={classes.mediaContainer}>
+                    <CardMedia
+                        className={classes.media}
+                        image={book.imageLinks ? book.imageLinks.thumbnail : 'http://via.placeholder.com/300'}
+                        title={book.title}
+                    />
                     <Button
-                        className={classes.expand}
+                        className={classes.changeShelfButton}
                         aria-haspopup="true"
                         onClick={this.onOpenOptionMenu}
                         variant="contained"
@@ -175,7 +176,17 @@ class Book extends Component {
                             </MenuItem>
                         })}
                     </Menu>
-                </CardActions>
+                </div>
+                <CardContent className={classes.content}>
+                    <Typography component="h5" variant="h5">
+                        {book.title}
+                    </Typography>
+                    {book.authors && book.authors.length > 0 && book.authors.map(author => (
+                        <Typography variant="subtitle1" color="textSecondary" key={author}>
+                            {author}
+                        </Typography>
+                    ))}
+                </CardContent>
             </Card>
         );
     }

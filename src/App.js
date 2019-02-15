@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import {withStyles} from '@material-ui/core/styles';
 import {Route} from 'react-router-dom';
 
@@ -11,6 +12,20 @@ import Loading from "./components/Loading";
 
 // REST Api
 import {getAll, search} from "./api/BooksApi";
+
+// Custom theme
+const muiTheme = createMuiTheme({
+    typography: {
+        useNextVariants: true,
+    },
+    overrides: {
+        MuiPaper: {
+            root: {
+                boxShadow: 'none'
+            }
+        }
+    }
+});
 
 const styles = theme => ({
     root: {
@@ -71,24 +86,28 @@ class App extends Component {
         const {isLoading, allBooks, searchBooks} = this.state;
         return (
             <div>
-                <Loading isLoading={isLoading} fixed={true}/>
-                <NavBar
-                    handleSearchBooks={this.handleSearchBooks}
-                />
-                <div className={classes.root}>
-                    <Route exact path='/' render={() => (
-                        <ShelfList
-                            books={allBooks}
-                            handleBooks={this.handleBooks}
-                        />
-                    )}/>
-                    <Route path='/search' render={({history}) => (
-                        <SearchBooks
-                            books={searchBooks}
-                            handleBooks={this.handleBooks}
-                        />
-                    )}/>
-                </div>
+                <MuiThemeProvider
+                    theme={muiTheme}
+                >
+                    <Loading isLoading={isLoading} fixed={true}/>
+                    <NavBar
+                        handleSearchBooks={this.handleSearchBooks}
+                    />
+                    <div className={classes.root}>
+                        <Route exact path='/' render={() => (
+                            <ShelfList
+                                books={allBooks}
+                                handleBooks={this.handleBooks}
+                            />
+                        )}/>
+                        <Route path='/search' render={({history}) => (
+                            <SearchBooks
+                                books={searchBooks}
+                                handleBooks={this.handleBooks}
+                            />
+                        )}/>
+                    </div>
+                </MuiThemeProvider>
             </div>
         );
     }

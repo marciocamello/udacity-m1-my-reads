@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -121,18 +122,33 @@ class NavBar extends Component {
         suggestions: []
     };
 
+    componentDidMount() {
+        document.addEventListener('click', this.onCloseAutoComplete, true);
+    }
+
+    componentWillUnmount() {
+        document.removeEventListener('click', this.onCloseAutoComplete, true);
+    }
+
     /**
      * @description Search books and execute callback to get result in parent component
      * @description Show auto suggestions
-     * @param event
+     * @param suggestion
      */
-    onSearchBooks = event => {
-        this.props.handleSearchBooks(event.target.value);
-        this.setState({
-            term: event.target.value,
-            searchInput: event.target.value,
-            suggestions: getSuggestions(event.target.value)
-        });
+    onSearchBooks = suggestion => {
+
+        if(suggestion) {
+
+            this.props.handleSearchBooks(suggestion);
+            this.setState({
+                term: suggestion,
+                searchInput: suggestion,
+                suggestions: getSuggestions(suggestion)
+            });
+        }else{
+
+            this.onRequestAutoComplete();
+        }
     };
 
     /**
@@ -144,9 +160,39 @@ class NavBar extends Component {
         this.props.handleSearchBooks(suggestion);
         this.setState({
             term: false,
-            searchInput: suggestion,
+            searchInput: suggestion ? suggestion : '',
             suggestions: [],
         });
+    };
+
+    /**
+     * @description Close auto suggestions in search area
+     * @description Execute callback to get result in parent component to clear result
+     * @param suggestion
+     */
+    onOpenAutoComplete = suggestion => {
+
+        if(suggestion && this.state.suggestions.length > 0) {
+
+            this.setState({
+                term: suggestion,
+                searchInput: suggestion
+            });
+        }
+    };
+
+    /**
+     * @description Update state from auto complete if click outside page
+     * @param event
+     */
+    onCloseAutoComplete = event => {
+        const domNode = ReactDOM.findDOMNode(this);
+
+        if (event && (!domNode || !domNode.contains(event.target))) {
+            this.setState({
+                term: false
+            });
+        }
     };
 
     render() {
@@ -178,8 +224,8 @@ class NavBar extends Component {
                                         input: classes.inputInput,
                                     }}
                                     value={this.state.searchInput}
-                                    onChange={this.onSearchBooks.bind(this)}
-                                    onClick={this.onSearchBooks.bind(this)}
+                                    onChange={event => this.onSearchBooks(event.target.value)}
+                                    onClick={event => this.onOpenAutoComplete(event.target.value)}
                                 />
                                 {this.state.term && (
                                     <Paper className={classes.autoComplete}>
