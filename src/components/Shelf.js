@@ -38,7 +38,7 @@ const Shelf = props => {
                         {title}
                     </Typography>
                     <Divider variant="fullWidth" className={classes.divider}/>
-                    <Grid className={classes.root} spacing={16}>
+                    <Grid className={classes.root}>
                         <Grid item xs={12}>
                             <Grid container justify="center" spacing={24}>
                                 {books.map(book => (

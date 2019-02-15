@@ -28,7 +28,7 @@ const styles = theme => ({
         paddingTop: '100%'
     },
     content: {
-        height: 200
+        minHeight: 189
     },
     actions: {
         display: 'flex',

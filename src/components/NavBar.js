@@ -179,6 +179,7 @@ class NavBar extends Component {
                                     }}
                                     value={this.state.searchInput}
                                     onChange={this.onSearchBooks.bind(this)}
+                                    onClick={this.onSearchBooks.bind(this)}
                                 />
                                 {this.state.term && (
                                     <Paper className={classes.autoComplete}>
