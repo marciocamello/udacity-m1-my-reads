@@ -24,10 +24,11 @@ const styles = theme => ({
         pointerEvents: 'none'
     },
     media: {
-        height: 250,
+        height: 189,
+        paddingTop: '100%'
     },
     content: {
-        height: 150
+        height: 200
     },
     actions: {
         display: 'flex',
@@ -37,7 +38,7 @@ const styles = theme => ({
         marginLeft: 'auto',
         transition: theme.transitions.create('transform', {
             duration: theme.transitions.duration.shortest,
-        }),
+        })
     },
     expandOpen: {
         transform: 'rotate(180deg)',
@@ -137,7 +138,7 @@ class Book extends Component {
                     </Typography>
                     {book.authors && book.authors.length > 0 && book.authors.map(author => (
                         <Typography variant="subtitle1" color="textSecondary" key={author}>
-                            {author} {book.shelf}
+                            {author}
                         </Typography>
                     ))}
                 </CardContent>

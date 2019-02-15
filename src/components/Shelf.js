@@ -18,6 +18,9 @@ const styles = theme => ({
     paper: {
         padding: theme.spacing.unit * 2,
         color: theme.palette.text.secondary,
+    },
+    title: {
+        marginTop: 40
     }
 });
 
@@ -31,15 +34,15 @@ const Shelf = props => {
         <div>
             {books.length > 0 && (
                 <div id={title}>
-                    <Typography component="h4" variant="h4">
+                    <Typography component="h4" variant="h4" className={classes.title}>
                         {title}
                     </Typography>
                     <Divider variant="fullWidth" className={classes.divider}/>
-                    <Grid container className={classes.root} spacing={16}>
+                    <Grid className={classes.root} spacing={16}>
                         <Grid item xs={12}>
                             <Grid container justify="center" spacing={24}>
                                 {books.map(book => (
-                                    <Grid key={book.id} item xs={12} md={4} lg={4}>
+                                    <Grid key={book.id} item xs={12} sm={4} md={3} lg={3} xl={2}>
                                         <Book
                                             className={classes.paper}
                                             handleFetchAllBooks={handleFetchAllBooks}
