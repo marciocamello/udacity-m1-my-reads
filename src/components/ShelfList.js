@@ -5,6 +5,7 @@ import Shelf from '../components/Shelf';
 import {Link} from "react-router-dom";
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
+import Book from "./Book";
 
 const styles = theme => ({
     root: {
@@ -29,7 +30,7 @@ class ShelfList extends Component {
 
     render() {
 
-        const {classes, books} = this.props;
+        const {classes, books, handleSearchBooks, filter} = this.props;
 
         // Filter books currently reading books
         const booksCurrentlyReading = books.filter(book => book.shelf === 'currentlyReading');
@@ -42,12 +43,24 @@ class ShelfList extends Component {
 
         return (
             <div>
-                <Shelf books={booksCurrentlyReading} title="Currently Reading"
-                       handleFetchAllBooks={this.props.handleBooks.bind(this)}/>
-                <Shelf books={booksWantToRead} title="Want To Read"
-                       handleFetchAllBooks={this.props.handleBooks.bind(this)}/>
-                <Shelf books={booksRead} title="Read"
-                       handleFetchAllBooks={this.props.handleBooks.bind(this)}/>
+                <Shelf books={booksCurrentlyReading}
+                       title="Currently Reading"
+                       handleFetchAllBooks={this.props.handleBooks.bind(this)}
+                       handleSearchBooks={handleSearchBooks}
+                       filter={filter}
+                />
+                <Shelf books={booksWantToRead}
+                       title="Want To Read"
+                       handleFetchAllBooks={this.props.handleBooks.bind(this)}
+                       handleSearchBooks={handleSearchBooks}
+                       filter={filter}
+                />
+                <Shelf books={booksRead}
+                       title="Read"
+                       handleFetchAllBooks={this.props.handleBooks.bind(this)}
+                       handleSearchBooks={handleSearchBooks}
+                       filter={filter}
+                />
                 <Link to="/search">
                     <Fab id="search-link" color="primary" aria-label="Add" className={classes.fab}>
                         <AddIcon/>

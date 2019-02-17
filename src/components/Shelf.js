@@ -29,7 +29,7 @@ const styles = theme => ({
  * @class
  */
 const Shelf = props => {
-    const {classes, books, title, handleFetchAllBooks} = props;
+    const {classes, books, title, handleFetchAllBooks, handleSearchBooks, filter} = props;
     return (
         <div>
             {books.length > 0 && (
@@ -46,6 +46,8 @@ const Shelf = props => {
                                         <Book
                                             className={classes.paper}
                                             handleFetchAllBooks={handleFetchAllBooks}
+                                            handleSearchBooks={handleSearchBooks}
+                                            filter={filter}
                                             book={book}
                                         />
                                     </Grid>

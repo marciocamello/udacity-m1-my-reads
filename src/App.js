@@ -18,6 +18,20 @@ const muiTheme = createMuiTheme({
     typography: {
         useNextVariants: true,
     },
+    /*palette: {
+        primary: {
+            // light: will be calculated from palette.primary.main,
+            main: '#ff4400',
+            // dark: will be calculated from palette.primary.main,
+            // contrastText: will be calculated to contrast with palette.primary.main
+        },
+        secondary: {
+            light: '#0066ff',
+            main: '#0044ff',
+            // dark: will be calculated from palette.secondary.main,
+            contrastText: '#ffcc00',
+        },
+    },*/
     overrides: {
         MuiPaper: {
             root: {
@@ -40,6 +54,7 @@ class App extends Component {
         isLoading: false,
         allBooks: [],
         searchBooks: [],
+        filter: '',
     };
 
     /**
@@ -56,9 +71,14 @@ class App extends Component {
         const books = await getAll();
 
         this.setState({
-            allBooks: books ? books : [],
-            isLoading: false
+            allBooks: books ? books : []
         });
+
+        setTimeout(() => {
+            this.setState({
+                isLoading: false
+            });
+        }, 1000);
     };
 
     /**
@@ -70,20 +90,33 @@ class App extends Component {
     handleSearchBooks = async filter => {
 
         this.setState({
-            isLoading: true
+            isLoading: true,
         });
 
-        const books = await search(filter);
+        let books = await search(filter);
+        const userBooks = await getAll();
+
+        if(books && userBooks){
+            books = books.filter(book => {
+                return !userBooks.some(b => b.id === book.id);
+            });
+        }
 
         this.setState({
             searchBooks: books ? books : [],
-            isLoading: false
+            filter: filter,
         });
+
+        setTimeout(() => {
+            this.setState({
+                isLoading: false
+            });
+        }, 1000);
     };
 
     render() {
         const {classes} = this.props;
-        const {isLoading, allBooks, searchBooks} = this.state;
+        const {isLoading, allBooks, searchBooks, filter} = this.state;
         return (
             <div>
                 <MuiThemeProvider
@@ -91,19 +124,25 @@ class App extends Component {
                 >
                     <Loading isLoading={isLoading} fixed={true}/>
                     <NavBar
+                        searchBooks={searchBooks}
                         handleSearchBooks={this.handleSearchBooks}
+                        filter={filter}
                     />
                     <div className={classes.root}>
                         <Route exact path='/' render={() => (
                             <ShelfList
                                 books={allBooks}
                                 handleBooks={this.handleBooks}
+                                handleSearchBooks={this.handleSearchBooks}
+                                filter={filter}
                             />
                         )}/>
-                        <Route path='/search' render={({history}) => (
+                        <Route path='/search' component={({history}) => (
                             <SearchBooks
                                 books={searchBooks}
                                 handleBooks={this.handleBooks}
+                                handleSearchBooks={this.handleSearchBooks}
+                                filter={filter}
                             />
                         )}/>
                     </div>

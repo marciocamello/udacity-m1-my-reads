@@ -117,6 +117,7 @@ class Book extends Component {
             });
 
             this.props.handleFetchAllBooks();
+            this.props.handleSearchBooks(this.props.filter);
         }
     };
 
