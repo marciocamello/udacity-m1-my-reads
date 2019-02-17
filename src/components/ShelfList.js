@@ -5,7 +5,6 @@ import Shelf from '../components/Shelf';
 import {Link} from "react-router-dom";
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
-import Book from "./Book";
 
 const styles = theme => ({
     root: {
@@ -28,18 +27,28 @@ class ShelfList extends Component {
         this.props.handleBooks(false);
     }
 
+    /**
+     * @description Add closure to better functionality
+     * @param books
+     * @returns {function(*): *}
+     */
+    filter = books => shelf => books.filter(b => b.shelf === shelf);
+
     render() {
 
-        const {classes, books, handleSearchBooks, filter} = this.props;
+        const {classes, handleSearchBooks, filter} = this.props;
+
+        // Filter using closure
+        const filterBy = this.filter(this.props.books);
 
         // Filter books currently reading books
-        const booksCurrentlyReading = books.filter(book => book.shelf === 'currentlyReading');
+        const booksCurrentlyReading = filterBy('currentlyReading');
 
         // Filter books want to read
-        const booksWantToRead = books.filter(book => book.shelf === 'wantToRead');
+        const booksWantToRead = filterBy('wantToRead');
 
         // Filter books read
-        const booksRead = books.filter(book => book.shelf === 'read');
+        const booksRead = filterBy('read');
 
         return (
             <div>
