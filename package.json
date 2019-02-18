@@ -14,24 +14,17 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "cypress": "cypress open",
     "dev-docs": "vuepress dev docs",
     "build-docs": "vuepress build docs",
-	"heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
   "devDependencies": {
     "cypress": "^3.1.4",
-    "vuepress": "^1.0.0-alpha.32"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "vuepress": "^0.14.9"
+  }
 }

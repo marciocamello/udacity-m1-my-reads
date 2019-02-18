@@ -1,4 +1,5 @@
 module.exports = {
+    dest: './build/static/docs',
     locales: {
         '/': {
             lang: 'en-US',
@@ -19,7 +20,11 @@ module.exports = {
                 sidebar: [
                     '/',
                     '/main',
-                    '/about'
+                    '/features',
+                    '/structure',
+                    '/run',
+                    '/test',
+                    '/docs',
                 ]
             },
             '/br/': {
@@ -28,7 +33,11 @@ module.exports = {
                 sidebar: [
                     '/',
                     '/br/main',
-                    '/br/about'
+                    '/br/features',
+                    '/br/structure',
+                    '/br/run',
+                    '/br/test',
+                    '/br/docs',
                 ]
             }
         },

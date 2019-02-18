@@ -89,29 +89,32 @@ class App extends Component {
      */
     handleSearchBooks = async filter => {
 
-        this.setState({
-            isLoading: true,
-        });
+        if(filter) {
 
-        let books = await search(filter);
-        const userBooks = await getAll();
-
-        if(books && userBooks){
-            books = books.filter(book => {
-                return !userBooks.some(b => b.id === book.id);
-            });
-        }
-
-        this.setState({
-            searchBooks: books ? books : [],
-            filter: filter,
-        });
-
-        setTimeout(() => {
             this.setState({
-                isLoading: false
+                isLoading: true,
             });
-        }, 1000);
+
+            let books = await search(filter);
+            const userBooks = await getAll();
+
+            if (books && userBooks) {
+                books = books.filter(book => {
+                    return !userBooks.some(b => b.id === book.id);
+                });
+            }
+
+            this.setState({
+                searchBooks: books ? books : [],
+                filter: filter,
+            });
+
+            setTimeout(() => {
+                this.setState({
+                    isLoading: false
+                });
+            }, 1000);
+        }
     };
 
     render() {
