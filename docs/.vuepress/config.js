@@ -1,5 +1,6 @@
 module.exports = {
     dest: './build/static/docs',
+    base: process.env.NODE_ENV === 'development' ? '/' : '/udacity-m1-my-reads/',
     locales: {
         '/': {
             lang: 'en-US',

@@ -145,3 +145,7 @@ git commit -m 'deploy'
 
 ```
 
+- Docs to this repository in github pages
+
+https://marciocamello.github.io/udacity-m1-my-reads/
+

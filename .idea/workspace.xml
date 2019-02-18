@@ -3,31 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="37ddc784-4278-45f9-87ce-52cf0cc30774" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/docs/br/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/br/docs.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/docs/br/main.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/br/run.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/br/structure.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/br/test.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/docs.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/docs/main.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/run.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/structure.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/test.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../desafios.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../desafios.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/features.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/br/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/br/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/br/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/br/features.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/br/main.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/br/main.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/main.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/main.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../videogame/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../videogame/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../videogame/src/components/UserCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/../videogame/src/components/UserCreate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../videogame/src/components/UserList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../videogame/src/components/UserList.js" afterDir="false" />
@@ -47,7 +30,7 @@
     <session id="-1599462655">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="2" />
@@ -71,8 +54,8 @@
           <entry key="css" value="4" />
           <entry key="env" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="1" />
-          <entry key="js" value="236" />
+          <entry key="html" value="2" />
+          <entry key="js" value="237" />
           <entry key="json" value="15" />
           <entry key="md" value="70" />
           <entry key="structure" value="1" />
@@ -82,9 +65,9 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="4" />
-          <entry key="HTML" value="1" />
+          <entry key="HTML" value="2" />
           <entry key="JSON" value="15" />
-          <entry key="JavaScript" value="236" />
+          <entry key="JavaScript" value="237" />
           <entry key="Markdown" value="69" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Vue.js" value="1" />
@@ -93,7 +76,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="17" />
-          <entry key="js" value="13209" />
+          <entry key="js" value="13262" />
           <entry key="json" value="45" />
           <entry key="md" value="3489" />
         </counts>
@@ -101,7 +84,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="45" />
-          <entry key="JavaScript" value="13209" />
+          <entry key="JavaScript" value="13262" />
           <entry key="Markdown" value="3488" />
           <entry key="PLAIN_TEXT" value="18" />
         </counts>
@@ -111,13 +94,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="909">
-                <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/docs/.vuepress/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -187,11 +167,11 @@
         <option value="$PROJECT_DIR$/docs/br/structure.md" />
         <option value="$PROJECT_DIR$/docs/run.md" />
         <option value="$PROJECT_DIR$/docs/test.md" />
-        <option value="$PROJECT_DIR$/docs/.vuepress/config.js" />
         <option value="$PROJECT_DIR$/docs/docs.md" />
         <option value="$PROJECT_DIR$/docs/br/docs.md" />
         <option value="$PROJECT_DIR$/docs/br/test.md" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/docs/.vuepress/config.js" />
       </list>
     </option>
   </component>
@@ -232,6 +212,22 @@
             <path>
               <item name="my-reads" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-reads" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-reads" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-reads" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-reads" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-reads" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-reads" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-reads" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -300,7 +296,7 @@
       <workItem from="1550324920944" duration="13186000" />
       <workItem from="1550347635749" duration="6122000" />
       <workItem from="1550408565824" duration="9087000" />
-      <workItem from="1550441423858" duration="7600000" />
+      <workItem from="1550441423858" duration="8229000" />
     </task>
     <task id="LOCAL-00001" summary="feat: This is a first commit to this application">
       <created>1548515607157</created>
@@ -313,10 +309,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96882000" />
+    <option name="totallyTimeSpent" value="97511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17913593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -649,13 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/.vuepress/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="29" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/br/test.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -669,10 +659,24 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="909">
-            <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
+          <first_editor relative-caret-position="1198">
+            <caret line="110" column="7" lean-forward="true" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/static/docs/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="71" lean-forward="true" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/.vuepress/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
         </state>
       </provider>
     </entry>
