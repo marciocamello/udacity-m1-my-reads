@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37ddc784-4278-45f9-87ce-52cf0cc30774" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/br/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/br/main.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/main.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/change_book_to_shelf_spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/check_if_exist_three_shelves_spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cypress/integration/go_to_search_page_and_search_a_book_spec.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../desafios.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../desafios.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cypress/integration/go_to_search_page_spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/go_to_search_page_spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Book.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Book.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchBooks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Shelf.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Shelf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ShelfList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ShelfList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../videogame/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../videogame/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../videogame/src/components/UserCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/../videogame/src/components/UserCreate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../videogame/src/components/UserList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../videogame/src/components/UserList.js" afterDir="false" />
@@ -37,16 +40,17 @@
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="15" />
+          <entry key="ESLintLanguageService" value="16" />
+          <entry key="TypeScriptServerServiceImpl" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -55,10 +59,11 @@
           <entry key="env" value="1" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="2" />
-          <entry key="js" value="237" />
+          <entry key="js" value="248" />
           <entry key="json" value="15" />
-          <entry key="md" value="70" />
+          <entry key="md" value="74" />
           <entry key="structure" value="1" />
+          <entry key="ts" value="2" />
           <entry key="vue" value="1" />
         </counts>
       </usages-collector>
@@ -67,37 +72,86 @@
           <entry key="CSS" value="4" />
           <entry key="HTML" value="2" />
           <entry key="JSON" value="15" />
-          <entry key="JavaScript" value="237" />
-          <entry key="Markdown" value="69" />
+          <entry key="JavaScript" value="248" />
+          <entry key="Markdown" value="73" />
           <entry key="PLAIN_TEXT" value="4" />
+          <entry key="TypeScript" value="2" />
           <entry key="Vue.js" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="17" />
-          <entry key="js" value="13262" />
+          <entry key="js" value="13938" />
           <entry key="json" value="45" />
-          <entry key="md" value="3489" />
+          <entry key="md" value="3540" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="45" />
-          <entry key="JavaScript" value="13262" />
-          <entry key="Markdown" value="3488" />
+          <entry key="JavaScript" value="13938" />
+          <entry key="Markdown" value="3539" />
           <entry key="PLAIN_TEXT" value="18" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/docs/.vuepress/config.js">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cypress/integration/go_to_search_page_spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+            <state relative-caret-position="153">
+              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cypress/integration/change_book_to_shelf_spec.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cypress/integration/check_if_exist_three_shelves_spec.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cypress/integration/go_to_search_page_and_search_a_book_spec.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/SearchBooks.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ShelfList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="70" column="31" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,7 +177,11 @@
       <find>searchBooks</find>
       <find>handleFetchFilteredBooks</find>
       <find>handleSearchBooks</find>
+      <find>simple-menu</find>
     </findStrings>
+    <replaceStrings>
+      <replace>change-book</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -143,18 +201,12 @@
         <option value="$PROJECT_DIR$/cypress.json" />
         <option value="$PROJECT_DIR$/cypress/integration/change_shelf_spec.js" />
         <option value="$PROJECT_DIR$/cypress/integration/move_book_to_shelf_spec.js" />
-        <option value="$PROJECT_DIR$/cypress/integration/go_to_search_page_spec.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/src/components/NavBar.js" />
-        <option value="$PROJECT_DIR$/src/components/SearchBooks.js" />
         <option value="$PROJECT_DIR$/src/components/Loading.js" />
-        <option value="$PROJECT_DIR$/src/components/SearchInput.js" />
-        <option value="$PROJECT_DIR$/src/components/ShelfList.js" />
-        <option value="$PROJECT_DIR$/src/components/Book.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/components/Shelf.js" />
         <option value="$PROJECT_DIR$/docs/.vuepress/GlobalLayout.vue" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/docs/README.md" />
@@ -170,8 +222,18 @@
         <option value="$PROJECT_DIR$/docs/docs.md" />
         <option value="$PROJECT_DIR$/docs/br/docs.md" />
         <option value="$PROJECT_DIR$/docs/br/test.md" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/docs/.vuepress/config.js" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/components/Book.js" />
+        <option value="$PROJECT_DIR$/src/components/Shelf.js" />
+        <option value="$PROJECT_DIR$/src/components/ShelfList.js" />
+        <option value="$PROJECT_DIR$/cypress/check_if_exist_three_shelves_spec.js" />
+        <option value="$PROJECT_DIR$/src/components/SearchInput.js" />
+        <option value="$PROJECT_DIR$/src/components/SearchBooks.js" />
+        <option value="$PROJECT_DIR$/cypress/integration/check_if_exist_three_shelves_spec.js" />
+        <option value="$PROJECT_DIR$/cypress/integration/change_book_to_shelf_spec.js" />
+        <option value="$PROJECT_DIR$/cypress/integration/go_to_search_page_spec.js" />
+        <option value="$PROJECT_DIR$/cypress/integration/go_to_search_page_and_search_a_book_spec.js" />
       </list>
     </option>
   </component>
@@ -216,18 +278,24 @@
             <path>
               <item name="my-reads" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-reads" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="cypress" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my-reads" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-reads" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="cypress" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my-reads" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-reads" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-reads" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-reads" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -246,18 +314,21 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="E:\2019\udacity\my-reads\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2018.2.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\2019\udacity\my-reads\docs\layouts" />
-      <recent name="E:\2019\udacity\my-reads\docs" />
-      <recent name="E:\2019\udacity\my-reads\docs\img" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\2019\udacity\my-reads\cypress\integration" />
+      <recent name="E:\2019\udacity\my-reads\cypress" />
       <recent name="E:\2019\udacity\my-reads\docs" />
       <recent name="E:\2019\udacity\my-reads\docs\br" />
       <recent name="E:\2019\udacity\my-reads\src\components" />
-      <recent name="E:\2019\udacity\my-reads" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\2019\udacity\my-reads\cypress\integration" />
+      <recent name="E:\2019\udacity\my-reads\docs\layouts" />
+      <recent name="E:\2019\udacity\my-reads\docs" />
+      <recent name="E:\2019\udacity\my-reads\docs\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -297,6 +368,7 @@
       <workItem from="1550347635749" duration="6122000" />
       <workItem from="1550408565824" duration="9087000" />
       <workItem from="1550441423858" duration="8229000" />
+      <workItem from="1550502749184" duration="5000000" />
     </task>
     <task id="LOCAL-00001" summary="feat: This is a first commit to this application">
       <created>1548515607157</created>
@@ -309,7 +381,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97511000" />
+    <option name="totallyTimeSpent" value="102511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -319,6 +391,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -374,13 +447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cypress/integration/go_to_search_page_spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -412,9 +478,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="10" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -452,13 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/SearchBooks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-486">
@@ -469,50 +525,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Book.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374">
-          <caret line="55" column="5" lean-forward="true" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ShelfList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Shelf.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="33" lean-forward="true" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/SearchInput.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="74" column="117" lean-forward="true" selection-start-line="67" selection-start-column="4" selection-end-line="74" selection-end-column="117" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/layouts/GlobalLayout.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/layouts/GlobalLayout.vue" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -626,41 +639,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/docs.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="442">
-            <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/br/docs.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="153">
-            <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/br/test.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="85">
             <caret line="5" selection-start-line="5" selection-end-line="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1198">
-            <caret line="110" column="7" lean-forward="true" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
           </first_editor>
           <second_editor />
         </state>
@@ -675,8 +658,117 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/.vuepress/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+        <state relative-caret-position="160">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/br/docs.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="153">
+            <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/docs.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="255">
+            <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Book.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="181" column="48" lean-forward="true" selection-start-line="181" selection-start-column="36" selection-end-line="181" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SearchInput.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="187" column="36" lean-forward="true" selection-start-line="187" selection-start-column="24" selection-end-line="187" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="348">
+            <caret line="25" column="12" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ShelfList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="70" column="31" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Shelf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SearchBooks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cypress/integration/change_book_to_shelf_spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cypress/integration/go_to_search_page_spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cypress/integration/check_if_exist_three_shelves_spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/cypress/types/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="689" column="39" selection-start-line="689" selection-start-column="34" selection-end-line="689" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cypress/integration/go_to_search_page_and_search_a_book_spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>

@@ -54,18 +54,21 @@ class ShelfList extends Component {
             <div>
                 <Shelf books={booksCurrentlyReading}
                        title="Currently Reading"
+                       id="currentlyReading"
                        handleFetchAllBooks={this.props.handleBooks.bind(this)}
                        handleSearchBooks={handleSearchBooks}
                        filter={filter}
                 />
                 <Shelf books={booksWantToRead}
                        title="Want To Read"
+                       id="wantToRead"
                        handleFetchAllBooks={this.props.handleBooks.bind(this)}
                        handleSearchBooks={handleSearchBooks}
                        filter={filter}
                 />
                 <Shelf books={booksRead}
                        title="Read"
+                       id="read"
                        handleFetchAllBooks={this.props.handleBooks.bind(this)}
                        handleSearchBooks={handleSearchBooks}
                        filter={filter}

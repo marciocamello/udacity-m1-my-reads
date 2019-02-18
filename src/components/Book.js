@@ -131,6 +131,16 @@ class Book extends PureComponent {
         return s ? s.name : 'none';
     };
 
+    /**
+     * @description Get shelf id
+     * @param shelf
+     * @returns {string}
+     */
+    getShelfId = shelf => {
+        const s = this.state.options.find(s => s.id === shelf);
+        return s ? s.id : 'none';
+    };
+
     render() {
 
         const {classes, book} = this.props;
@@ -139,13 +149,14 @@ class Book extends PureComponent {
         return (
             <Card className={this.state.isLoading ? classes.cardDisabled : classes.card}>
                 <Loading isLoading={this.state.isLoading}/>
-                <div className={classes.mediaContainer}>
+                <div className={classes.mediaContainer} id={this.getShelfId(book.shelf)}>
                     <CardMedia
                         className={classes.media}
                         image={book.imageLinks ? book.imageLinks.thumbnail : 'http://via.placeholder.com/300'}
                         title={book.title}
                     />
                     <Button
+                        id="change-book"
                         className={classes.changeShelfButton}
                         aria-haspopup="true"
                         onClick={this.onOpenOptionMenu}
@@ -168,6 +179,7 @@ class Book extends PureComponent {
                             s = book.shelf === option.id;
 
                             return <MenuItem
+                                id="change-shelf"
                                 key={option.id}
                                 onClick={() => s ? {} : this.onUpdateBookFromShelf(book, option.id)}
                                 selected={s}

@@ -29,11 +29,11 @@ const styles = theme => ({
  * @class
  */
 const Shelf = props => {
-    const {classes, books, title, handleFetchAllBooks, handleSearchBooks, filter} = props;
+    const {classes, books, title, id, handleFetchAllBooks, handleSearchBooks, filter} = props;
     return (
         <div>
             {books.length > 0 && (
-                <div id={title}>
+                <div id={id}>
                     <Typography component="h4" variant="h4" className={classes.title}>
                         {title}
                     </Typography>

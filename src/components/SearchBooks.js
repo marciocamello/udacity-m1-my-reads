@@ -25,7 +25,7 @@ class SearchBooks extends Component{
     render(){
         const {classes, books, handleBooks, handleSearchBooks, filter} = this.props;
         return (
-            <div>
+            <div id="search-book-container">
                 <Typography component="h4" variant="h4">
                     Search Books
                 </Typography>

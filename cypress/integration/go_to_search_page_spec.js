@@ -1,6 +1,8 @@
 describe('Go to search page', () => {
     it('succesfully performs search page', () => {
 
+        cy.viewport(1024, 768)
+
         // visit 'baseUrl'
         cy.visit('/');
 
