@@ -1,15 +1,12 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
-import {withStyles} from '@material-ui/core/styles';
+import {createMuiTheme, MuiThemeProvider, withStyles} from '@material-ui/core/styles';
 import {Route} from 'react-router-dom';
-
 // Components
 import NavBar from './components/NavBar';
 import ShelfList from './components/ShelfList';
 import SearchBooks from './components/SearchBooks';
 import Loading from "./components/Loading";
-
 // REST Api
 import {getAll, search} from "./api/BooksApi";
 
@@ -89,11 +86,11 @@ class App extends Component {
      */
     handleSearchBooks = async filter => {
 
-        if(filter) {
+        this.setState({
+            isLoading: true,
+        });
 
-            this.setState({
-                isLoading: true,
-            });
+        try {
 
             let books = await search(filter);
             const userBooks = await getAll();
@@ -110,12 +107,15 @@ class App extends Component {
                 filter: filter,
             });
 
-            setTimeout(() => {
-                this.setState({
-                    isLoading: false
-                });
-            }, 1000);
+        } catch (e) {
+
         }
+
+        setTimeout(() => {
+            this.setState({
+                isLoading: false
+            });
+        }, 1000);
     };
 
     render() {

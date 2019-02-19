@@ -117,18 +117,13 @@ class SearchInput extends Component {
      */
     onSearchBooks = suggestion => {
 
-        if(suggestion) {
+        this.props.handleSearchBooks(suggestion);
 
-            this.props.handleSearchBooks(suggestion);
-            this.setState({
-                term: suggestion,
-                searchInput: suggestion,
-                suggestions: getSuggestions(suggestion)
-            });
-        }else{
-
-            this.onRequestAutoComplete();
-        }
+        this.setState({
+            term: suggestion,
+            searchInput: suggestion,
+            suggestions: getSuggestions(suggestion)
+        });
     };
 
     /**

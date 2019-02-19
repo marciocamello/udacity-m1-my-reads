@@ -5,13 +5,7 @@
       <change beforePath="$PROJECT_DIR$/../desafios.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../desafios.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Book.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loading.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchBooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchBooks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SearchInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchInput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Shelf.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Shelf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ShelfList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ShelfList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../videogame/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../videogame/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../videogame/src/components/UserCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/../videogame/src/components/UserCreate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../videogame/src/components/UserList.js" beforeDir="false" afterPath="$PROJECT_DIR$/../videogame/src/components/UserList.js" afterDir="false" />
@@ -31,8 +25,8 @@
     <session id="-1599462655">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
-          <entry key="project.open.time.0" value="2" />
+          <entry key="project.closed" value="16" />
+          <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.2" value="1" />
@@ -42,12 +36,12 @@
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="17" />
+          <entry key="ESLintLanguageService" value="18" />
           <entry key="TypeScriptServerServiceImpl" value="1" />
         </counts>
       </usages-collector>
@@ -57,7 +51,7 @@
           <entry key="env" value="1" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="2" />
-          <entry key="js" value="271" />
+          <entry key="js" value="275" />
           <entry key="json" value="15" />
           <entry key="md" value="74" />
           <entry key="structure" value="1" />
@@ -70,7 +64,7 @@
           <entry key="CSS" value="4" />
           <entry key="HTML" value="2" />
           <entry key="JSON" value="15" />
-          <entry key="JavaScript" value="271" />
+          <entry key="JavaScript" value="275" />
           <entry key="Markdown" value="73" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="TypeScript" value="2" />
@@ -80,7 +74,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="17" />
-          <entry key="js" value="14402" />
+          <entry key="js" value="14670" />
           <entry key="json" value="45" />
           <entry key="md" value="3540" />
         </counts>
@@ -88,7 +82,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="45" />
-          <entry key="JavaScript" value="14402" />
+          <entry key="JavaScript" value="14670" />
           <entry key="Markdown" value="3539" />
           <entry key="PLAIN_TEXT" value="18" />
         </counts>
@@ -98,10 +92,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/ShelfList.js">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="68" />
+            <state relative-caret-position="272">
+              <caret line="94" column="32" lean-forward="true" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -110,13 +104,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
+        <entry file="file://$PROJECT_DIR$/src/components/SearchInput.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+            <state relative-caret-position="183">
+              <caret line="175" column="27" lean-forward="true" selection-start-line="175" selection-start-column="27" selection-end-line="175" selection-end-column="27" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Book.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/api/BooksApi.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="755">
+              <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -196,9 +208,9 @@
         <option value="$PROJECT_DIR$/src/components/Shelf.js" />
         <option value="$PROJECT_DIR$/src/components/Book.js" />
         <option value="$PROJECT_DIR$/src/components/NavBar.js" />
-        <option value="$PROJECT_DIR$/src/components/SearchInput.js" />
         <option value="$PROJECT_DIR$/src/components/ShelfList.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/components/SearchInput.js" />
       </list>
     </option>
   </component>
@@ -232,7 +244,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,12 +260,19 @@
               <item name="my-reads" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-reads" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-reads" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-reads" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -323,7 +341,8 @@
       <workItem from="1550408565824" duration="9087000" />
       <workItem from="1550441423858" duration="8229000" />
       <workItem from="1550502749184" duration="5241000" />
-      <workItem from="1550537911700" duration="4066000" />
+      <workItem from="1550537911700" duration="4169000" />
+      <workItem from="1550542432197" duration="846000" />
     </task>
     <task id="LOCAL-00001" summary="feat: This is a first commit to this application">
       <created>1548515607157</created>
@@ -336,7 +355,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106818000" />
+    <option name="totallyTimeSpent" value="107767000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -421,13 +440,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cypress/support/index.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/BooksApi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -663,13 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Book.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="181" column="49" lean-forward="true" selection-start-line="181" selection-start-column="49" selection-end-line="181" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/NavBar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -686,16 +691,6 @@
           <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/SearchInput.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1826">
-          <caret line="197" column="82" lean-forward="true" selection-start-line="197" selection-start-column="82" selection-end-line="197" selection-end-column="82" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -720,10 +715,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/BooksApi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="755">
+          <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Book.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+        <state relative-caret-position="272">
+          <caret line="94" column="32" lean-forward="true" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SearchInput.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="175" column="27" lean-forward="true" selection-start-line="175" selection-start-column="27" selection-end-line="175" selection-end-column="27" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
