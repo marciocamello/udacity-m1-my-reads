@@ -32,6 +32,7 @@ const styles = theme => ({
 const NavBar = props => {
 
     const {classes, handleSearchBooks, searchBooks, filter} = props;
+
     return (
         <div className={classes.root}>
             <AppBar position="fixed">
@@ -62,6 +63,9 @@ const NavBar = props => {
 
 NavBar.propTypes = {
     classes: PropTypes.object.isRequired,
+    handleSearchBooks: PropTypes.func.isRequired,
+    searchBooks: PropTypes.array.isRequired,
+    filter: PropTypes.string.isRequired
 };
 
 export default withStyles(styles)(NavBar);

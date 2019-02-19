@@ -86,6 +86,9 @@ class ShelfList extends Component {
 
 ShelfList.propTypes = {
     classes: PropTypes.object.isRequired,
+    handleSearchBooks: PropTypes.func.isRequired,
+    handleBooks: PropTypes.func.isRequired,
+    filter: PropTypes.string.isRequired
 };
 
 export default withStyles(styles)(ShelfList);

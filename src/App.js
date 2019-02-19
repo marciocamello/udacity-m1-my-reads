@@ -99,9 +99,10 @@ class App extends Component {
             const userBooks = await getAll();
 
             if (books && userBooks) {
-                books = books.filter(book => {
-                    return !userBooks.some(b => b.id === book.id);
-                });
+                for (let item of books) {
+                    const bookShelf = userBooks.find(book => book.id === item.id);
+                    item.shelf = bookShelf ? bookShelf.shelf : "none";
+                }
             }
 
             this.setState({
@@ -118,8 +119,10 @@ class App extends Component {
     };
 
     render() {
+
         const {classes} = this.props;
         const {isLoading, allBooks, searchBooks, filter} = this.state;
+
         return (
             <div>
                 <MuiThemeProvider

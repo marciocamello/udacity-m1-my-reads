@@ -29,7 +29,9 @@ const styles = theme => ({
  * @class
  */
 const Shelf = props => {
+
     const {classes, books, title, id, handleFetchAllBooks, handleSearchBooks, filter} = props;
+
     return (
         <div>
             {books.length > 0 && (
@@ -63,6 +65,11 @@ const Shelf = props => {
 
 Shelf.propTypes = {
     classes: PropTypes.object.isRequired,
+    books: PropTypes.array.isRequired,
+    id: PropTypes.string.isRequired,
+    handleFetchAllBooks: PropTypes.func.isRequired,
+    handleSearchBooks: PropTypes.func.isRequired,
+    filter: PropTypes.string.isRequired
 };
 
 export default withStyles(styles)(Shelf);

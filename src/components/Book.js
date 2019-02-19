@@ -207,6 +207,9 @@ class Book extends PureComponent {
 
 Book.propTypes = {
     classes: PropTypes.object.isRequired,
+    book: PropTypes.object.isRequired,
+    handleFetchAllBooks: PropTypes.func.isRequired,
+    handleSearchBooks: PropTypes.func.isRequired
 };
 
 export default withStyles(styles)(Book);

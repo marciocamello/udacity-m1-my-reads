@@ -178,7 +178,9 @@ class SearchInput extends Component {
     };
 
     render() {
+
         const {classes} = this.props;
+
         return (
             <div className={classes.search}>
                 <div className={classes.searchIcon}>
@@ -218,6 +220,7 @@ class SearchInput extends Component {
 
 SearchInput.propTypes = {
     classes: PropTypes.object.isRequired,
+    handleSearchBooks: PropTypes.func.isRequired,
 };
 
 export default withStyles(styles)(SearchInput);

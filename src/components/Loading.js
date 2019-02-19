@@ -36,7 +36,9 @@ const styles = theme => ({
 });
 
 const Loading = props => {
+
     const {classes, isLoading, fixed} = props;
+
     return (
         <div>
             {isLoading && (
@@ -50,6 +52,8 @@ const Loading = props => {
 
 Loading.propTypes = {
     classes: PropTypes.object.isRequired,
+    isLoading: PropTypes.bool.isRequired,
+    fixed: PropTypes.bool,
 };
 
 export default withStyles(styles)(Loading);
