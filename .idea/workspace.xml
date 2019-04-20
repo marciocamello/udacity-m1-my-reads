@@ -11,40 +11,7 @@
       <change afterPath="$PROJECT_DIR$/docs/main.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../contatos/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../contatos/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../desafios.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../desafios.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/my-reads.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/my-reads.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/integration/change_book_to_shelf_spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/change_book_to_shelf_spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/integration/check_if_exist_three_shelves_spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/check_if_exist_three_shelves_spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/integration/go_to_search_page_and_search_a_book_spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/go_to_search_page_and_search_a_book_spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/integration/go_to_search_page_spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/cypress/integration/go_to_search_page_spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/br/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/br/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/br/docs.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/br/docs.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/br/features.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/br/features.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/br/main.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/br/main.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/br/run.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/br/run.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/br/structure.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/br/structure.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/br/test.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/br/test.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/docs.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/docs.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/features.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/features.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/main.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/main.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/run.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/run.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/structure.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/structure.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/test.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/test.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/BooksApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/BooksApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Book.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Loading.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchInput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Shelf.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Shelf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ShelfList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ShelfList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../react-fundamentals/1-comecando-com-react-starter/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../react-fundamentals/1-comecando-com-react-starter/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../react-fundamentals/1-comecando-com-react-starter/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../react-fundamentals/1-comecando-com-react-starter/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../react-fundamentals/1-comecando-com-react-starter/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../react-fundamentals/1-comecando-com-react-starter/package.json" afterDir="false" />
@@ -177,10 +144,10 @@
     <session id="-261110780">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.30" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -188,13 +155,14 @@
           <entry key="env" value="1" />
           <entry key="js" value="2" />
           <entry key="json" value="1" />
+          <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="2" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -205,37 +173,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-                <element signature="e#217#258#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="11" selection-end-column="28" />
+            <state relative-caret-position="405">
+              <caret line="48" column="78" lean-forward="true" selection-start-line="48" selection-start-column="78" selection-end-line="49" selection-end-column="116" />
             </state>
           </provider>
         </entry>
@@ -289,7 +232,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/docs/.vuepress/GlobalLayout.vue" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/docs/README.md" />
         <option value="$PROJECT_DIR$/docs/br/README.md" />
         <option value="$PROJECT_DIR$/docs/main.md" />
@@ -318,6 +260,7 @@
         <option value="$PROJECT_DIR$/src/components/ShelfList.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/SearchInput.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -443,6 +386,8 @@
       <workItem from="1550542432197" duration="1081000" />
       <workItem from="1555771425435" duration="435000" />
       <workItem from="1555772131098" duration="45000" />
+      <workItem from="1555773370599" duration="32000" />
+      <workItem from="1555780759667" duration="7000" />
     </task>
     <task id="LOCAL-00001" summary="feat: This is a first commit to this application">
       <created>1548515607157</created>
@@ -455,13 +400,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108482000" />
+    <option name="totallyTimeSpent" value="108521000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1014" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18303095" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08751334" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -475,7 +420,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3394794" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.18665159" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -625,9 +570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="472">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -635,9 +577,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
           <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -645,9 +584,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -686,26 +622,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/SearchInput.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="53">
           <caret line="113" column="33" selection-start-line="113" selection-start-column="33" selection-end-line="113" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="450">
           <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -716,18 +642,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="11" selection-end-column="28" />
+        <state relative-caret-position="420">
+          <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="48" column="78" lean-forward="true" selection-start-line="48" selection-start-column="78" selection-end-line="49" selection-end-column="116" />
         </state>
       </provider>
     </entry>
